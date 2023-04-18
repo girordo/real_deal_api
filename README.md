@@ -1,18 +1,54 @@
-# RealDealApi
+# Real Deal API
 
-To start your Phoenix server:
+An API created based on this [tutorial](https://www.youtube.com/playlist?list=PL2Rv8vpZJz4zM3Go3X-dda478p-6xrmEl)
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Tech Stack 🧰
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+- Elixir
+- Phoenix
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## API Reference
 
-## Learn more
+#### Get all items
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```http
+  GET /api/items
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+#### Get item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
+
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
+
+## Usage/Examples
+
+I will insert something here
+
+```elixir
+And here
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+---
+
+<div align="center">
+
+<sub>Made with 💜 by <a href="https://github.com/girordo">Tarcísio Giroldo</a></sub>
+
+</div>
