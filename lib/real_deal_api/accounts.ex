@@ -22,6 +22,26 @@ defmodule RealDealApi.Accounts do
   end
 
   @doc """
+  Gets a single account by email.
+
+  Returns nil if the Account doesn't exist.
+
+  ## Examples
+
+      iex> get_account_by_email(flinstones@gmail.com)
+      %Account{}
+
+      iex> get_account_by_email(456)
+      nil
+  """
+
+  def get_account_by_email(email) do
+    Account
+    |> where(email: ^email)
+    |> Repo.one()
+  end
+
+  @doc """
   Gets a single account.
 
   Raises `Ecto.NoResultsError` if the Account does not exist.
