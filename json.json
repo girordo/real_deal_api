@@ -1,0 +1,9 @@
+{
+  "account": {
+    "email": "psaulso@gmail.com",
+    "hash_password": "hash_password",
+    "full_name": "Erlangs son",
+    "gender": null,
+    "biography": "Another text"
+  }
+}

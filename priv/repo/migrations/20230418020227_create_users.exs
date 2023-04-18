@@ -7,11 +7,11 @@ defmodule RealDealApi.Repo.Migrations.CreateUsers do
       add :full_name, :string
       add :gender, :string
       add :biography, :text
-      add :acccount_id, references(:accounts, on_delete: :delete_all, type: :binary_id)
+      add :account_id, references(:accounts, on_delete: :delete_all, type: :binary_id)
 
       timestamps()
     end
 
-    create index(:users, [:acccount_id, :full_name])
+    create index(:users, [:account_id, :full_name])
   end
 end
