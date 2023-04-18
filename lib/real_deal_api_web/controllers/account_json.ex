@@ -22,4 +22,6 @@ defmodule RealDealApiWeb.AccountJSON do
       hash_password: account.hash_password
     }
   end
+
+  defp data(%)
 end
